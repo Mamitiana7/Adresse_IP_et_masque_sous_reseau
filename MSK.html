@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur de Reseau</title>
+    <style>
+        main{
+            height: 200px;
+            margin: 20px;
+            border: 2px solid rgb(9, 227, 235);
+            justify-content: center;
+            box-shadow: rgb(17, 230, 201);
+            border-radius: 20px;
+            background: rgb(210, 221, 220);
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculateur d'Adresse Reseau</h1>
+    <main>
+    <form action="msk.cgi" method="get">
+        <label for="ip">Adresse IP:</label></br>
+        <input type="text" id="ip" name="ip" required><br></br>
+        <label for="mask">Masque de Sous-Reseau:</label></br>
+        <input type="text" id="mask" name="mask" required><br><br>
+        <input type="submit" value="Calculer">
+    </form>
+    </main>
+</body>
+</html>
